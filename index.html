@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Blog Platform</title>
+<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <h1>My Blog Post</h1>
+	<section id="post-form-section">
+        <form id="post-form">
+          <div>
+            <label for ="title">Title:</label>
+            <input type="text" id="title" name="title">
+            <span class="error" id="title-error"></span>
+          </div> 
+          <div>
+            <label for="content">Content:</label>
+            <textarea name="content" id="content"></textarea>
+            <span class="error" id="content-error"></span>
+          </div> 
+          <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="posts-section">
+        <h2>Posts</h2>
+        <div id="posts-container"></div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
